@@ -9,6 +9,7 @@ div.prepend(img);
 const inputText = document.createElement('input');
 inputText.setAttribute("type","text");
 inputText.setAttribute("placeholder","Сьогодні п'ятниця?");
+inputText.id = "inText"
 div.appendChild(inputText);
 const br = document.createElement('br');
 div.appendChild(br);
@@ -16,8 +17,10 @@ const br2 = document.createElement('br');
 div.appendChild(br2);
 const btn = document.createElement('button');
 btn.innerHTML="Спитати";
+btn.id = "btn";
 div.appendChild(btn);
 const text_ball = document.createElement("p");
+text_ball.id = "ball"
 div.appendChild(text_ball);
 btn.addEventListener('click', () => {
 var st = String(inputText.value).indexOf("?");
