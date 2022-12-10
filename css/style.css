@@ -39,3 +39,6 @@ border:#151922;
 border-radius:5px;
 color:white;
 }
+@media screen and (max-width: 1200px) {
+	#btn,#inText,#ball {font-size: 40px;}
+}
